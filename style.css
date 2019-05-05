@@ -1,0 +1,806 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.btn {
+    padding: 12px 18px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s ease-in-out;
+}
+
+nav .bm {
+    background: transparent;
+    color: #29ca8e;
+}
+
+#burger {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    border-top: 6px solid #29ca8e;
+}
+
+nav .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #575757;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav .link-bg {
+    margin: 0 -2px;
+    padding: 18px 14px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+nav .link-bg:hover {
+    background: #29ca8e;
+}
+
+nav .link-bg:hover a {
+    color: #fff;
+}
+
+nav .link-bg:nth-child(1) {
+    background: #29ca8e;
+}
+
+nav .link-bg:nth-child(1) a {
+    color: #fff;
+}
+
+nav .logo {
+    font-weight: 600;
+}
+
+nav i {
+    padding: 5px;
+    background: #29ca8e;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.main {
+    width: 100%;
+    min-height: 70vh;
+    background: url('img/slider-image3.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container {
+    position: relative;
+    z-index: 2;
+}
+
+.main .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .2;
+}
+
+.main h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.main a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.main a:hover {
+    color: #FF3;
+}
+
+.main .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.desc {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.desc .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc .box {
+    width: 100%;
+    max-width: 314px;
+    padding: 60px 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.desc .circle {
+    width: 60px;
+    height: 60px;
+    background: #3f51b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc .circle h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+.desc .box h4 {
+    margin: 16px 0;
+    color: #454545;
+}
+
+.desc .box p {
+    margin: 0;
+    color: #757575;
+    font-size: 14px;
+}
+
+.about {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.about .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .about-left, .about .about-right {
+    width: 100%;
+    max-width: 42%;
+}
+
+.about .about-card {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about .about-card .circle {
+    margin: 0 20px;
+    padding: 10px 20px;
+    width: 60px;
+    height: 60px;
+    background: #29ca8e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-card i {
+    color: #fff;
+}
+
+.about .about-left h1 {
+    margin: 30px 0;
+    color: #353535;
+    font-weight: 600;
+}
+
+.about .about-card h5 {
+    margin: 0;
+    color: #454545;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about .about-card p {
+    margin: 0;
+    color: #757575;
+    font-size: 14px;
+}
+
+.about .about-info {
+    margin-bottom: 18px;
+}
+
+.about .about-right .circle {
+    margin: 0;
+    width: 450px;
+    height: 450px;
+    background: #252020;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-right h2 {
+    color: #fff;
+}
+
+.about .about-right input {
+    margin: 14px 0;
+    padding: 10px;
+    width: 240px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    outline: none;
+}
+
+.about .about-right .btn {
+    margin: 20px 0 0 0;
+    padding: 15px 26px;
+    background: #fff;
+    color: #000;
+}
+
+.about .about-right .btn:hover {
+    background: #3f51b5;
+    color: #fff;
+    border: 1px solid #3f51b5;
+}
+
+.teachers {
+    width: 100%;
+    padding: 80px 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.teachers h1, .courses h1, .reviews h1 {
+    margin: 0;
+    color: #454545;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.teachers h6, .courses h6, .reviews h6 {
+    margin: 0;
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.teachers .container {
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teachers .card {
+    width: 100%;
+    max-width: 230px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    text-align: left;
+}
+
+.teachers .card-pic img, .courses .course-pic img, .contact .contact-pic img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.teachers .card-info h4 {
+    margin: 16px 0 0 0;
+    color: #454545;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.teachers .card-info h4, .teachers .card-info p, .courses .course-info h4, .courses .course-info p {
+    padding-left: 16px;
+}
+
+.teachers .card-info p, .courses .course-info p {
+    margin: 2px 0 20px 0;
+    font-size: 14px;
+}
+
+.teachers .card-socials {
+    padding: 10px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.teachers .card-socials i {
+    margin-left: 15px;
+    padding: 8px 10px;
+    color: #000;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+}
+
+.teachers .card-socials i:hover {
+    background: #29ca8e;
+    color: #f0f0f0;
+}
+
+.courses {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.courses .container {
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses .overlay {
+    position: absolute;
+    bottom: 5%;
+    left: 6%;
+    display: flex;
+}
+
+.courses .overlay p {
+    margin: 0 8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.courses .overlay i {
+    margin-right: 6px;
+}
+
+.courses .course-pic {
+    position: relative;
+}
+
+.courses .course-card {
+    width: 100%;
+    max-width: 312px;
+    background: #f9f9f9;
+    text-align: left;
+    display: table;
+}
+
+.courses .course-social {
+    padding: 8px 10px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .course-social .btn {
+    padding: 6px 8px;
+    background: #29ca8e;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.courses .course-social img {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.courses .wrap {
+    display: flex;
+    align-items: center;
+}
+
+.courses .course-info h4 {
+    margin: 16px 0 0 0;
+    color: #454545;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.courses .arrow {
+    margin: 0 6px;
+    padding: 4px 10px;
+    background: #D6D6D6;
+    color: #FFF;
+    transition: .4s ease-in-out;
+}
+
+.courses .arrow:hover {
+    background: #869791;
+}
+
+.reviews {
+    width: 100%;
+    padding: 80px 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.reviews .container {
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews .review-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 60px 50px;
+    background: #fff;
+    text-align: left;
+}
+
+.reviews .review-card:nth-child(3) {
+    height: 290px;
+}
+
+.reviews .card-row {
+    display: flex;
+    align-items: center;
+}
+
+.reviews .card-row img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.reviews .review-card h5, .reviews .review-card p {
+    margin: 0;
+}
+
+.reviews .review-card h5 {
+    color: #333;
+    line-height: 1.2;
+}
+
+.reviews .review-card p {
+    color: #757575;
+    font-size: 14px;
+}
+
+.reviews .card-text {
+    margin: 20px 0 0 0;
+}
+
+.reviews .card-text i {
+    margin: 8px 0 0 0;
+    color: #3f51b5;
+}
+
+.reviews .dot {
+    margin: 0 4px;
+    color: #D6D6D6;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.reviews .dot:hover, .reviews .dot:first-of-type {
+    color: #869791;
+}
+
+.contact {
+    width: 100%;
+    padding: 100px 0;
+    background: #3f51b5;
+}
+
+.contact .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact-left, .contact .contact-right {
+    width: 100%;
+    max-width: 48%;
+}
+
+.contact .contact-left h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.contact .contact-left p {
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact .contact-left input, .contact .contact-left textarea {
+    width: 100%;
+    margin: 4px 0;
+    padding: 14px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact .contact-left input::placeholder, .contact .contact-left textarea::placeholder {
+    padding: 0 0 0 16px;
+}
+
+.contact .contact-left .btn {
+    margin: 8px 0 0 0;
+    padding: 14px 26px;
+    background: #fff;
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.contact .contact-left .btn:hover {
+    background: transparent;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    padding: 100px 0;
+    background: #252020;
+}
+
+footer .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-card {
+    width: 100%;
+    max-width: 26%;
+}
+
+footer .footer-info h1, footer .footer-bot h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+footer .footer-info p, footer .footer-bot p {
+    margin: 6px 0;
+    color: #909090;
+    font-size: 14px;
+}
+
+footer .footer-bot {
+    margin: 40px 0 0 0;
+}
+
+footer .footer-bot i {
+    margin: 0 8px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    color: #29ca8e;
+    transition: .4s ease-in-out;
+}
+
+footer .footer-bot i:hover {
+    background: #29ca8e;
+    color: #fff;
+}
+
+footer .footer-info a, footer .footer-bot a {
+    color: #909090;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+footer .footer-bot a {
+    margin: 0 2px;
+}
+
+footer .footer-info a:hover, footer .footer-bot a:hover {
+    color: #29ca8e;
+}
+
+footer .footer-info input {
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #303030;
+    outline: none;
+}
+
+footer .footer-info input::placeholder {
+    padding-left: 14px;
+}
+
+footer .footer-bot.last {
+    margin: 14px 0 0 0;
+}
+
+footer .footer-bot .btn {
+    margin: 8px 0;
+    padding: 12px 50px;
+    color: #fff;
+}
+
+footer .footer-bot .btn:hover {
+    background: #29ca8e;
+    color: #fff;
+    border: 1px solid #29ca8e;
+}
+
+footer .footer-bot p:nth-child(2) {
+    font-size: 11px;
+}
+
+@media(max-width: 590px) {
+    nav .logo {
+        display: none;
+    }
+    nav .container {
+        justify-content: flex-end;
+    }
+    .about .about-right .circle {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(min-width: 591px) and (max-width: 900px) {
+    nav .container {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 768px) {
+    .desc .box {
+        max-width: 60%;
+        margin: 20px 0;
+    }
+    .teachers .container, .courses .container, .reviews .container, .desc .container, footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .teachers .card, .courses .course-card, .reviews .review-card {
+        max-width: 60%;
+        margin: 20px 0;
+    }
+    footer .footer-card {
+        max-width: 80%;
+        margin: 40px 0;
+        text-align: center;
+    }
+    footer .footer-bot.mg {
+        margin: 0;
+    }
+    footer input {
+        max-width: 60%;
+    }
+    footer input::placeholder {
+        text-align: center;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1100px) {
+    .desc .box {
+        max-width: 45%;
+        margin: 20px 0;
+    }
+    .teachers .container, .courses .container, .reviews .container, .desc .container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .teachers .card, .courses .course-card, .reviews .review-card {
+        max-width: 40%;
+        margin: 20px 0;
+    }
+    .courses .course-card:nth-child(3), .reviews .review-card:nth-child(3) {
+        max-width: 70%;
+    }
+    footer .container {
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 900px) {
+    #burger {
+        display: block;
+    }
+    nav .link-bg:last-of-type, nav .list.show {
+        display: none;
+    }
+    nav .container, nav .link-bg {
+        padding: 6px 0;
+    }
+    nav a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+    .contact .contact-left, .contact .contact-right {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1150px) {
+    nav .container, .main .container, .about .container, .about .about-left, .about .about-right {
+        max-width: 90%;
+    }
+    .main {
+        background-position: right;
+        text-align: center;
+    }
+    .main br {
+        display: none;
+    }
+    .about .about-card {
+        width: 400px;
+        margin: 40px 0;
+    }
+    .about .about-info {
+        margin: 0;
+    }
+    .about h1, .contact {
+        text-align: center;
+    }
+    .about .container, .contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .about-left, .about .about-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .contact-right {
+        margin: 60px 0;
+    }
+}
